@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.scss"],"names":[],"mappings":"AAEA;EACI,WAHc,EAIjB;;AACD;EACI,kCAAyB;MAAzB,8BAAyB;UAAzB,0BAAyB,EAC5B","file":"all.css","sourcesContent":["$primary-color:red;\r\n\r\nbody{\r\n    color:$primary-color;\r\n}\r\n.card{\r\n    transform: rotate(220deg);\r\n}"]}

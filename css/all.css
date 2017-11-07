@@ -1,0 +1,9 @@
+body {
+  color: red; }
+
+.card {
+  -webkit-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+          transform: rotate(220deg); }
+
+/*# sourceMappingURL=all.css.map */
