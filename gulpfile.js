@@ -110,8 +110,15 @@ gulp.task('watch', function () {
   gulp.watch('./source/js/**/*.js', ['babel']);
 });
 
+//gulp-gh-pages 上傳到github
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe($.ghPages());
+});
+
+
 //完成專案用gulp build --env production為最終輸出
-gulp.task('build',gulpSequence('clean','jade', 'sass', 'babel', 'vendorJs','image-min'))//這6項流程為發佈用,所以不需要'browser-sync', 'watch'這兩個開發流程
+gulp.task('build',gulpSequence('clean','jade', 'sass', 'babel', 'vendorJs','image-min'));//這6項流程為發佈用,所以不需要'browser-sync', 'watch'這兩個開發流程
 
 //開發階段為gulp
 gulp.task('default', ['jade', 'sass', 'babel', 'vendorJs', 'browser-sync','image-min', 'watch']);

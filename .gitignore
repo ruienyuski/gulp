@@ -1,6 +1,5 @@
 .tmp
-vendors
-public
+bower_components
 node_modules
-.bowerrc
+public
 package-lock.json
